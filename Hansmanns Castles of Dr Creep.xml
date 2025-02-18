@@ -1,0 +1,49 @@
+<NotepadPlus>
+    <Project name="Hansmanns Castles of Dr Creep">
+        <Folder name="asm">
+            <File name="data\mods\Hansmanns Castles of Dr Creep\asm\object.asm" />
+            <File name="data\mods\Hansmanns Castles of Dr Creep\asm\creepload.asm" />
+        </Folder>
+        <Folder name="d64" />
+        <Folder name="dis">
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\dis\creepload.dis" />
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\dis\object.dis" />
+        </Folder>
+        <Folder name="inc">
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\inc\CC_ZPG.asm" />
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\inc\CC_Var.asm" />
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\inc\CC_Items.asm" />
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\inc\CC_Data.Items.asm" />
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\inc\CC_Data.Sprites.asm" />
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\inc\CC_Data.Sound.asm" />
+            <Folder name="C64">
+                <File name="Data\inc\c64.MEM.asm" />
+                <File name="Data\inc\c64.VIC.asm" />
+                <File name="Data\inc\c64.CIA1.asm" />
+                <File name="Data\inc\c64.CIA2.asm" />
+                <File name="Data\inc\c64.SID.asm" />
+                <File name="Data\inc\c64.Color.asm" />
+                <File name="Data\inc\c64.CPU.ZP.asm" />
+                <File name="Data\inc\c64.BASIC.ZP.asm" />
+                <File name="Data\inc\c64.BASIC.const.asm" />
+                <File name="Data\inc\c64.BASIC.pgm.asm" />
+                <File name="Data\inc\c64.BASIC.routines.asm" />
+                <File name="Data\inc\c64.BASIC.token.asm" />
+                <File name="Data\inc\c64.KERNAL.ZP.asm" />
+                <File name="Data\inc\c64.KERNAL.API.asm" />
+                <File name="Data\inc\c64.KERNAL.const.asm" />
+                <File name="Data\inc\c64.KERNAL.routines.asm" />
+            </Folder>
+        </Folder>
+        <Folder name="lst">
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\lst\object.err" />
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\lst\object.lst" />
+            <File name="Data\mods\Hansmanns Castles of Dr Creep\lst\object.sym" />
+        </Folder>
+        <Folder name="prg" />
+        <Folder name="xtra">
+            <File name="data\mods\Hansmanns Castles of Dr Creep\xtra\CreepEdit.Short.Instruction.txt" />
+        </Folder>
+        <File name="Data\mods\Hansmanns Castles of Dr Creep\asm\Changes.txt" />
+    </Project>
+</NotepadPlus>
