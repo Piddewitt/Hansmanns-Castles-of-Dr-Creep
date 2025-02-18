@@ -21,4 +21,5 @@ A modified The Castle of Dr Creep game with some new features to experiment with
         - **mods**
           - `Hansmanns Castles of Dr Creep`
 ##
-## New Start Game Commands
+## Simple Castle Data Editor
+A Castle Data Editor as an EXCEL notebook can be found in the **xtra** sub-directory
