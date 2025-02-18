@@ -1,0 +1,84 @@
+Changes
+removed
+  TabFlags_NotUsed
+  TabWrkRoom_NoUse
+  TabWrkFlag_Force_IRQ and all related stuff (GameForceEndlessIRQ
+  Dead Code: start to Dead Code: end
+  CopyProtection
+  TabFlagMusicDataCopy
+  DemoMusicDataCopy
+  CCZ_MusicDataSourcePtr
+  CCZ_MusicDataTargetPtr
+  GameMenuScreenInit overwrite with Sound Effect data copy loop (.logical section removed)
+  
+  Routines that are used only once moved to EndOfCode where the can be overwritten
+    GameColdStart      - routines that are used only once
+    GameMenuScreenInit - routines that are used only once
+---------------------------------------------------------------------------------------------------------
+.hbu000.
+  CreepLoad "Pic A Title"
+    filename adapted
+    Gfx adapted
+.hbu001.
+  Sprite and item data/numbers sorted
+.hbu002.
+  Sprites modified
+    Player
+    Frankenstein
+.hbu003.
+  make key data numbers movable
+  init key count
+.hbu004.
+  Sprites modified
+    Player does not move
+.hbu005.
+  force demo start at room #0 instead of #01
+.hbu006.
+  make trap switch sound effect data movable
+.hbu007.
+  player room arrival sprite
+  display player arrival sprite if player does not move
+  care for sidewalk move if player does not move
+.hbu008.
+  do not pile up mummies anymore
+.hbu009.
+  Mummy active wait
+.hbu010.
+  Mummy wall new end piece
+.hbu011.
+  Player short ladder/pole start modified
+  Frank  short ladder/pole start modified
+.hbu012.
+  Key pick pings / enter room pings vary with their colors
+.hbu013.
+  after death replay the same room - all data restored except time
+.hbu014.
+  actions no longer possible by keeping the fire button pressed permanently
+  fire button must now be pressed exactly in front of the object
+  except ray gun
+.hbu015.
+  player text/time recoloring
+  add colored live counter to castle map process time
+.hbu016.
+  restructure leaderboard display
+.hbu017.
+  player map arrow recoloring
+.hbu018.
+  only one save file per castle
+  'X'<castle_name>
+  name automatically equals the castle data name
+  constantly overwritten
+.hbu019.
+  allow leaderboard entry for a resmumed game
+.hbu020.
+  remove bottom border flicker
+.hbu021.
+  new title screen texts
+---------------------------------------------------------------------------------------------------------
+not implemented
+---------------------------------------------------------------------------------------------------------
+.hbu---.
+  indroduce a seperate map hires screen to the free $9800 area
+  make castle data file movable
+  always do a level reload to CC_LevelGame - load area $9800 freed
+---------------------------------------------------------------------------------------------------------

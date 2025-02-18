@@ -1,0 +1,97 @@
+Simple Castle Data Editor
+--------------------------------------------------------------------------------------------------------------------------
+Insert new Rooms
+  Select sheet 'rooms'
+  The "Add a Room" form will pop up in the top left corner of the screen
+    Add a Room
+      Press the RED button under label "Insertions/Room"
+        A right click on the 'no' column of the entry does the same
+      A raw room data line will be inserted
+      The pointers to the door count pDoorCntLo/pDoorCntHi and pDoorIdLo/pDoorIdHi will be auto filled if a door is inserted into the room
+      Right click on posX or PosY to position new the room
+        The room position selection grid form pops up in the top left corner of the screen
+          Select the top left corner of the new room to choose the desired position
+      Right click the mapSize cell of the new room
+        The rooms size/color selection format pops up in the center of the screen
+          Choose the desired room size
+          Choose the desired room color
+    Delete a Room
+      Select the desired room line on sheet "rooms"
+      Press the RED "Delete Active Room" button
+    Delete the complete castle data and reset all sheets
+      Press the RED "Clear Whole Castle Data" button
+Insert new Room Items
+  Select sheet 'data'
+  The "Add and Modify Items" form will pop up in the top left corner of the screen
+  Select the room to be modified
+  Start with defining the doors
+    Press the Door button under "Full Block"
+      Choose the desired amount in the requester window
+      The rooms door data pointers in shett "rooms" will be auto updated for pDoorCntLo/pDoorCntHi and pDoorIdLo/pDoorIdHi
+      Select a door
+        Choose its posX/posY position in the room
+          Right click the rooms "inWall" cell
+            The doors "Wall Selection" form pops up in the center of the screen
+            Choose the desired doors wall
+        Choose its posX/posY offset in the map room
+          Right click the rooms "mapOffX" or "mapOffY" cell
+            The doors "Wall Selection" form pops up in the center of the screen
+            Click an available arrow until the desired doors map wall position is reached
+            To control the position press the "Refresh" button on the "Rooms Map" form displayed after pressing the map button under label "Maps/Process"
+        Choose door type
+          Right click the rooms "isExit" cell
+            Choose the desired door type
+  Special: Enter a Text
+    Press the "HI" text button under label "Insert/Full Block"
+    To enter a text RIGHT click the empty text on the right side of the initialized text data line
+    Enter a text in the requester window 
+    In any case use "_" as a placeholder for a " " (space)
+    The text is autoformatted according to its postion values in posX/posY (follow the standard "grid" selection above)
+    Right click the color cell of the new text entry
+      The text "Color Selction" map will pop up
+      Select the desired color
+    Right click the style cell of the new text entry
+      The text size selection form will pop up
+      Select the desired text hight
+      The data width of each character has to be x'08'
+--------------------------------------------------------------------------------------------------------------------------
+Now Fill the room with all needed items by pressing the "Full Block" item button under label "Insertions"
+To control each modification press the "Refresh" button on the rooms map form displayed after pressing the map button under label "Maps/Process"
+
+Data lines can be added to an already existing item block by clicking button "Data Row" under label "Insert/Block Row"
+The items end of data marker should be always in place automatically 
+  If not add one by clicking button EoD Marker under label "Insert/Block Row"
+
+Each new entry is inserted below the active line/block
+Every item length must be entered manually
+
+A whole item data block can be deleted by clicking button Delete Whole Item under label "Delete"
+An item data line can be deleted by
+  Selecting a cell in the item block
+  Clicking button Delete Active Item Row under label "Delete"
+  Every blocks/lines to be deleted are marked
+--------------------------------------------------------------------------------------------------------------------------
+Finally set the Start Room/Start Room Door
+  Select the Start Room Data
+  Select any field of the Start Room Door line
+  Clicking the "Set Active Room/Door as Start under the label "Process/Misc"
+  
+  Only available for PLayer #1
+  Player #2 must be set manually in sheet "vars"
+  
+  No edit for the Castle Escape picture
+  Must be created manually
+--------------------------------------------------------------------------------------------------------------------------
+All data values can also be set manually by directly overwriting the existing data cell
+Get the necessary value from the "Show Active Room" form
+--------------------------------------------------------------------------------------------------------------------------
+Save the castle data file - copy it over to a CoDC game disk - test
+--------------------------------------------------------------------------------------------------------------------------
+I successfully (fingers crossed) modified any castle data file with this workbook but:
+
+Famous Last Words
+  what was planned as a quick and easy tool grew uncontrolable bigger and bigger
+  hopefully, not too many weird errors will pop up
+  then select "Developer/Macros" and try to click at least "Macros_Off" and "Macros_On"
+--------------------------------------------------------------------------------------------------------------------------
+hg
